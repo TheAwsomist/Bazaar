@@ -5,7 +5,8 @@ import LoginPage from './project_comps/pages/LoginPage'
 import SideNavbar from './project_comps/SideNavbar'
 import Table from './project_comps/Table'
 import './scss/style.scss'
-import PropType from 'prop-types';
+import PropTypes from 'prop-types'
+
 
 const loading = (
   <div className="pt-3 text-center">
@@ -34,7 +35,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  children: PropType.node,
-};
+  items: PropTypes.arrayOf(PropTypes.any).isRequired,
+}
 
 export default App

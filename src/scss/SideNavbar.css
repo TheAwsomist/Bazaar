@@ -24,6 +24,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .UserCredentials .avatar {
@@ -75,6 +76,13 @@
   color: #90a0b7;
 }
 
+.navitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .navitem .navtitle {
   font-family: Poppins;
   font-style: normal;
@@ -85,5 +93,11 @@
   letter-spacing: 0.01em;
   /* dark_blue */
   color: #334d6e;
+  margin-left: 16.5px;
+}
+
+.nav-options {
+  margin-top: 39px;
+  margin-left: 26.5px;
 }
 /*# sourceMappingURL=SideNavbar.css.map */

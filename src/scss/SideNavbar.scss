@@ -28,6 +28,7 @@
   margin-left: 15px;
   margin-top: 24px;
   display: flex;
+  width: 100%;
   .avatar {
     width: 62px;
     height: 62px;
@@ -70,6 +71,8 @@
 }
 
 .navitem {
+    display: flex;
+    margin-bottom: 20px;
   .navtitle {
     font-family: Poppins;
     font-style: normal;
@@ -83,5 +86,12 @@
     /* dark_blue */
 
     color: #334d6e;
+    margin-left: 16.5px;
   }
 }
+
+.nav-options{
+    margin-top: 39px;
+    margin-left: 26.5px;
+}
+
