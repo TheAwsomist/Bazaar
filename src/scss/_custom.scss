@@ -1,0 +1,61 @@
+// Here you can add other styles
+
+body{
+    font-family: 'Mulish',sans-serif;
+}
+
+
+.bg-custom{
+    background:linear-gradient(
+        to bottom,
+        #FFA66A 0%,
+        #FFA66A 50%,
+        #C5D7EE 50%,
+        #C5D7EE 100%
+    )
+}
+
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-top: 26px;
+    .loginh1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    p{
+        margin-top: 12px;
+    }
+
+    .text-medium-emphasis{
+        font-size: 14px;
+    }
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    .loginfield{
+        width: 100%;
+        border-radius: 8px;
+        background-color: #FCFDFE;
+        border: 1px solid #F0F1F7;
+    }
+}
+
+.logincard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .loginform{
+        width: 316px;
+        margin-top: 48px;
+
+        label{
+            font-weight: 700;
+            color: #9FA2B4;
+        }
+    }
+}
+

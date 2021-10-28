@@ -1,0 +1,87 @@
+@mixin display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Side {
+  font-family: 'Poppins', sans-serif;
+  width: 16em;
+  height: 53.125em;
+}
+
+.titleside {
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 24px;
+  margin-top: 17px;
+  /* position: absolute; */
+}
+
+.Line {
+  border: 1px solid #d1d5d8;
+  width: 16em;
+  margin-top: 18px;
+}
+
+.UserCredentials {
+  margin-left: 15px;
+  margin-top: 24px;
+  display: flex;
+  .avatar {
+    width: 62px;
+    height: 62px;
+    background-color: cyan;
+    border-radius: 40px;
+  }
+  .userdetails {
+    @include display();
+    p {
+      margin: 0px;
+    }
+    padding-left: 9px;
+    .username {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      /* black */
+
+      color: #192a3e;
+    }
+    .email {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      /* identical to box height */
+
+      letter-spacing: 0.01em;
+      margin-top: 9px;
+      /* gray */
+
+      color: #90a0b7;
+    }
+  }
+}
+
+.navitem {
+  .navtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* dark_blue */
+
+    color: #334d6e;
+  }
+}
