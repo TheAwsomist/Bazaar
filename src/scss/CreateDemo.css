@@ -1,0 +1,113 @@
+.formpage {
+  width: 1000px;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 10px;
+}
+
+.create button {
+  border: none;
+  background-color: #fd6b09;
+  font-weight: 500;
+  color: white;
+  border-radius: 7px;
+  height: 30px;
+  width: 200px;
+}
+
+.form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 70px 32px;
+  border-radius: 30px;
+}
+
+.form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
+.form .form-label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form .inputfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form form {
+  margin-top: 31px;
+}
+
+.form h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.form .input {
+  width: 400px;
+  border-radius: 20px;
+}
+
+.form .documentupload {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #818194;
+  font-weight: 500;
+}
+
+.form .submitdiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 44px;
+}
+
+.form .submitdiv .submit {
+  border: none;
+  background-color: #fd6b09;
+  font-weight: 500;
+  color: white;
+  border-radius: 7px;
+  height: 60px;
+  width: 400px;
+  border-radius: 40px;
+}
+/*# sourceMappingURL=CreateDemo.css.map */

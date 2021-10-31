@@ -1,0 +1,51 @@
+.searchbar {
+  width: 87vw;
+  border-bottom: 1px solid #EBEFF2;
+  background-color: white;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 21px 38.5px;
+  padding-right: 39px;
+}
+
+.searchbar .search {
+  width: 87vw;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchbar .search .searchicon {
+  background-image: url("../assets/images/icons/search.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.searchbar .search input {
+  border: none;
+  margin-left: 14.93px;
+}
+
+.searchbar .search input:focus {
+  outline: none;
+}
+
+.searchbar .notification {
+  background-image: url("../assets/images/icons/notifications.png");
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+/*# sourceMappingURL=SearchBar.css.map */

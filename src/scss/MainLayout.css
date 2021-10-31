@@ -1,0 +1,126 @@
+.Card {
+  width: 250px;
+  height: 123px;
+  background-color: #f2bc97;
+  padding: 18px 25px;
+  border-radius: 10px;
+}
+
+.Card .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Card .section .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.Card .section .number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.Card .section p {
+  margin: 0px;
+}
+
+.Card .section .cardicon {
+  width: 48px;
+  height: 48px;
+  background-color: #f5365c;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Card #lowersection {
+  margin-top: 20px;
+}
+
+.Card .positive {
+  color: #059255;
+  font-weight: 700;
+}
+
+.Card .negative {
+  color: #eb110a;
+  font-weight: 700;
+}
+
+.Dashboard {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.Dashboard .section h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.Dashboard #dashboardlowersection {
+  width: 1069px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.demotable {
+  background-color: white;
+  width: 1500px;
+  border-radius: 10px;
+}
+
+.demotable .tableheader {
+  color: #334d6e;
+  font-size: 15px;
+}
+
+.demotable .tabledata {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.demotable .tablename {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.demotable .links {
+  color: #707683;
+}
+
+.demotable .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 40px;
+}
+/*# sourceMappingURL=MainLayout.css.map */

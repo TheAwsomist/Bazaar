@@ -1,0 +1,96 @@
+.Card {
+  width: 250px;
+  height: 123px;
+  background-color: #f2bc97;
+  padding: 18px 25px;
+  border-radius: 10px;
+  .section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    .title {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    .number {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    p {
+      margin: 0px;
+    }
+    .cardicon {
+      width: 48px;
+      height: 48px;
+      background-color: #f5365c;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  #lowersection {
+    margin-top: 20px;
+  }
+
+  .positive {
+    color: #059255;
+    font-weight: 700;
+  }
+  .negative {
+    color: #eb110a;
+    font-weight: 700;
+  }
+}
+
+.Dashboard {
+  margin-left: 40px;
+  margin-top: 20px;
+  .section {
+    h2 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  #dashboardlowersection {
+    width: 1069px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.demotable {
+    background-color: white;
+    width: 1500px;
+    border-radius: 10px;
+  .tableheader {
+    color: #334d6e;
+    font-size: 15px;
+  }
+
+  .tabledata{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+  .tablename {
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .links {
+    color: #707683;
+  }
+
+  .option {
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+  }
+}

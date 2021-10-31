@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Card from './project_comps/Card'
 import LoginPage from './project_comps/pages/LoginPage'
+import SearchBar from './project_comps/SearchBar'
 import SideNavbar from './project_comps/SideNavbar'
 import Table from './project_comps/Table'
 import './scss/style.scss'
-import PropTypes from 'prop-types'
-
+import Dashboard from '../src/project_comps/pages/Dashboard'
+import Demo from './project_comps/DemoTable'
+import DemoPage from './project_comps/pages/Demo'
+import CreateDemo from './project_comps/CreateDemo'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -27,15 +30,31 @@ class App extends Component {
   render() {
     return (
       <>
+        {' '}
         {/* <LoginPage/> */}
-        <SideNavbar/>
+        <Router>
+          <SearchBar />
+          <div className="mainpage">
+            <SideNavbar />
+            <div className="Layout-Container">
+              <Switch>
+                <Route exact path="/">
+                  <Dashboard />
+                </Route>
+                <Route path="/demopage">
+                  <DemoPage/>
+                </Route>
+                <Route path="/createnewdemo">
+                  <CreateDemo/>
+                </Route>
+              </Switch>
+            </div>
+          </div>
+        </Router>
+        {/* <CreateDemo/> */}
       </>
     )
   }
-}
-
-App.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.any).isRequired,
 }
 
 export default App
