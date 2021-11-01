@@ -1,26 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import {
-  CCard,
-  CCardBody,
-  CCardHeader,
-  CCol,
-  CRow,
-  CTable,
-  CTableBody,
-  CTableCaption,
-  CTableDataCell,
-  CTableHead,
-  CTableHeaderCell,
-  CTableRow,
-} from '@coreui/react'
-
-import share from '../assets/images/icons/share-active.png'
-import deleteicon from '../assets/images/icons/delete.png'
+    CCard,
+    CCardBody,
+    CCardHeader,
+    CCol,
+    CRow,
+    CTable,
+    CTableBody,
+    CTableCaption,
+    CTableDataCell,
+    CTableHead,
+    CTableHeaderCell,
+    CTableRow,
+  } from '@coreui/react'
+import eye from '../assets/images/icons/Eye.png'
+import edit from '../assets/images/icons/Edit.png'
+import trash from '../assets/images/icons/delete-active.png'
 import PropTypes from 'prop-types'
-import '../scss/ShareTable.css'
+import deleteicon from '../assets/images/icons/delete.png'
 
-const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
-  const [selected, SetSelected] = useState(0)
+
+
+const MembersTable = () => {
+    const [selected, SetSelected] = useState(0)
   useEffect(() => {
     console.log(selected)
   }, [selected])
@@ -76,7 +78,7 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
                 Mobile Number
               </CTableHeaderCell>
               <CTableHeaderCell scope="col" className="tableheader tabledata">
-                Category
+                Role
               </CTableHeaderCell>
               <CTableHeaderCell scope="col" className="tableheader tabledata">
                 Status
@@ -102,13 +104,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className="tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
-                <Status status="Verified" />
+                <Status status="Verified"/>
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                  <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -127,13 +131,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Verified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -152,13 +158,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Unverified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -177,13 +185,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Unverified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -202,13 +212,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Unverified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -227,13 +239,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Verified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -252,13 +266,15 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
               </CTableDataCell>
               <CTableDataCell className="links tabledata">jane.doe@gmail.com</CTableDataCell>
               <CTableDataCell className=" tabledata">+91258444444</CTableDataCell>
-              <CTableDataCell className="tabledata">Silver</CTableDataCell>
+              <CTableDataCell className="tabledata">Role 1</CTableDataCell>
               <CTableDataCell className="tabledata">
                 <Status status="Unverified" />
               </CTableDataCell>
               <CTableDataCell className="tabledata">
                 <div>
-                  <img src={share} alt="" width="24px" height="24px" /> Share
+                <img src={eye} alt="" width="24px" height="24px" />
+                  <img src={edit} alt="" width="24px" height="24px" className="memberoptions"/>
+                  <img src={trash} alt="" width="24px" height="24px" className="memberoptions"/>
                 </div>
               </CTableDataCell>
             </CTableRow>
@@ -269,20 +285,22 @@ const ShareTable = ({ name, email, MobNum, Category, Stat }) => {
   )
 }
 
+
 const Status = ({ status }) => {
-  const color = status === 'Verified' ? 'verified' : 'unverified'
-  return <div className={`statustag ${color}`}>{status}</div>
-}
-
-ShareTable.propTypes = {
-  name: PropTypes.arrayOf(PropTypes.any).isRequired,
-  email: PropTypes.arrayOf(PropTypes.any).isRequired,
-  MobNum: PropTypes.arrayOf(PropTypes.any).isRequired,
-  Category: PropTypes.arrayOf(PropTypes.any).isRequired,
-  Stat: PropTypes.arrayOf(PropTypes.any).isRequired,
-}
-Status.propTypes = {
-  status: PropTypes.arrayOf(PropTypes.any).isRequired,
-}
-
-export default ShareTable
+    const color = status === 'Verified' ? 'verified' : 'unverified'
+    return <div className={`statustag ${color}`}>{status}</div>
+  }
+  
+  MembersTable.propTypes = {
+    name: PropTypes.arrayOf(PropTypes.any).isRequired,
+    email: PropTypes.arrayOf(PropTypes.any).isRequired,
+    MobNum: PropTypes.arrayOf(PropTypes.any).isRequired,
+    Category: PropTypes.arrayOf(PropTypes.any).isRequired,
+    Stat: PropTypes.arrayOf(PropTypes.any).isRequired,
+  }
+  Status.propTypes = {
+    status: PropTypes.arrayOf(PropTypes.any).isRequired,
+  }
+  
+ 
+export default MembersTable;

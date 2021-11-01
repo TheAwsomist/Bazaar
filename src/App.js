@@ -11,6 +11,10 @@ import Demo from './project_comps/DemoTable'
 import DemoPage from './project_comps/pages/Demo'
 import CreateDemo from './project_comps/CreateDemo'
 import ShareTable from './project_comps/ShareTable'
+import ShareApp from './project_comps/pages/Share'
+import MembersTable from './project_comps/MembersTable'
+import Member from './project_comps/pages/Member'
+import CreateMember from './project_comps/CreateMember'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -33,7 +37,7 @@ class App extends Component {
       <>
         {' '}
         {/* <LoginPage/> */}
-        {/* <Router>
+        <Router>
           <SearchBar />
           <div className="mainpage">
             <SideNavbar />
@@ -43,17 +47,24 @@ class App extends Component {
                   <Dashboard />
                 </Route>
                 <Route path="/demopage">
-                  <DemoPage/>
+                  <DemoPage />
                 </Route>
                 <Route path="/createnewdemo">
-                  <CreateDemo/>
+                  <CreateDemo />
+                </Route>
+                <Route path="/ShareApp">
+                  <ShareApp />
+                </Route>
+                <Route path="/Members">
+                  <Member />
+                </Route>
+                <Route path="/CreateMember">
+                <CreateMember/>
                 </Route>
               </Switch>
             </div>
           </div>
-        </Router> */}
-        <ShareTable/>
-        {/* <CreateDemo/> */}
+        </Router>
       </>
     )
   }

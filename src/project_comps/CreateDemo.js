@@ -650,6 +650,7 @@ const CustomerDemo = () => {
             </div>
           </CForm>
         </form>
+        <div className="submitdiv"><button className="submit">Submit</button></div>
       </div>
     </div>
   )

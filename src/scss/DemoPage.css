@@ -20,7 +20,10 @@
   font-weight: 500;
   color: white;
   border-radius: 7px;
-  height: 40px;
+  height: 50px;
+  width: 230px;
+  -webkit-box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+          box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
 }
 
 .demotitle h1 {
@@ -34,5 +37,27 @@
   background-color: none;
   color: #fd6b09;
   outline: none;
+}
+
+.numselected {
+  background-color: white;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.memberoptions {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=DemoPage.css.map */

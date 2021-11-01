@@ -38,8 +38,12 @@ const SideNavbar = () => {
         <Link to="/demopage">
           <NavItems icon={demo} title="Demo" id="demo"  isActive={"dashboard" === navclass} SetClass={SetNavClass} />
         </Link>
-        <NavItems icon={share} title="Share Link Of App" id="share"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
-        <NavItems icon={person} title="Members" id="member"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        <Link to="/ShareApp">
+          <NavItems icon={share} title="Share Link Of App" id="share"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        </Link>
+        <Link to="/Members">
+          <NavItems icon={person} title="Members" id="member"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        </Link>
         <NavItems icon={people} title="Customers" id="customer"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
         <NavItems icon={deals} title="Products" id="product"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
         <NavItems icon={medal} title="Offers" id="offer" isActive={"dashboard" === navclass}   SetClass={SetNavClass} />
