@@ -10,6 +10,7 @@ import Dashboard from '../src/project_comps/pages/Dashboard'
 import Demo from './project_comps/DemoTable'
 import DemoPage from './project_comps/pages/Demo'
 import CreateDemo from './project_comps/CreateDemo'
+import ShareTable from './project_comps/ShareTable'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -32,7 +33,7 @@ class App extends Component {
       <>
         {' '}
         {/* <LoginPage/> */}
-        <Router>
+        {/* <Router>
           <SearchBar />
           <div className="mainpage">
             <SideNavbar />
@@ -50,7 +51,8 @@ class App extends Component {
               </Switch>
             </div>
           </div>
-        </Router>
+        </Router> */}
+        <ShareTable/>
         {/* <CreateDemo/> */}
       </>
     )

@@ -25,7 +25,7 @@ const CreateDemo = () => {
     <div className="formpage">
       <Router>
         <div className="create">
-          <Link to="/newitemdemo">
+          <Link to="/">
             <button>Item Demo</button>
           </Link>
           <Link to="/newcustomerdemo">
@@ -34,7 +34,7 @@ const CreateDemo = () => {
         </div>
         <div style={{ borderRadius: '30px' }}>
           <Switch>
-            <Route exact path="/newitemdemo">
+            <Route exact path="/">
               <ItemDemo />
             </Route>
             <Route path="/newcustomerdemo">
