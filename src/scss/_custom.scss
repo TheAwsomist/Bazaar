@@ -3,6 +3,7 @@
 body{
     font-family: 'Mulish',sans-serif;
     background-color: #F5F6F8;
+    user-select: none;
 }
 
 
@@ -67,6 +68,17 @@ body{
     background-color: #F5F6F8;
     margin-left: 36px;
     margin-top: 102px;
+}
+
+@media screen and (max-width:1662px){
+    .Layout-Container{
+        width: 78vw;
+        height: 92.5vh;
+        margin-top: 71px;
+        background-color: #F5F6F8;
+        margin-left: 36px;
+        margin-top: 102px;
+    }
 }
 
 .mainpage{

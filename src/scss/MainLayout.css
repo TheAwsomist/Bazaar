@@ -89,9 +89,20 @@
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 1662px) {
+  .demotable {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1662px) {
+  .demotable {
+    width: 87vw;
+  }
+}
+
 .demotable {
   background-color: white;
-  width: 1500px;
   border-radius: 10px;
 }
 

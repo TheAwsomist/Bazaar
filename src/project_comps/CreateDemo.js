@@ -328,7 +328,7 @@ const ItemDemo = () => {
                 />
               </div>
             </div>
-            <div className="row">
+            <div className="row" style={{padding:"0px 40px"}}>
               <a href="" className="documentupload">
                 Upload Document 1
               </a>
@@ -336,7 +336,7 @@ const ItemDemo = () => {
                 Upload Document 2
               </a>
             </div>
-            <div className="row">
+            <div className="row" style={{padding:"0px 40px"}}>
               <a href="" className="documentupload">
                 Upload Document 3
               </a>
@@ -632,7 +632,7 @@ const CustomerDemo = () => {
                 />
               </div>
             </div>
-            <div className="row">
+            <div className="row" style={{padding:"0px 40px"}}>
               <a href="" className="documentupload">
                 Upload Document 1
               </a>
@@ -640,7 +640,7 @@ const CustomerDemo = () => {
                 Upload Document 2
               </a>
             </div>
-            <div className="row">
+            <div className="row" style={{padding:"0px 40px"}}>
               <a href="" className="documentupload">
                 Upload Document 3
               </a>

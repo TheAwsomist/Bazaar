@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,WAAW,EAAE,GAAG;CACnB;;AACD,AAAA,YAAY,CAAA;EACR,WAAW,EAAE,IAAI;CACpB;;AAED,AAAA,EAAE,EAAE,EAAE,CAAA;EACF,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "ProductTable.scss"
+    ],
+    "names": [],
+    "file": "ProductTable.css"
+}

@@ -15,6 +15,10 @@ import ShareApp from './project_comps/pages/Share'
 import MembersTable from './project_comps/MembersTable'
 import Member from './project_comps/pages/Member'
 import CreateMember from './project_comps/CreateMember'
+import Customer from './project_comps/pages/Customer'
+import CreateCustomer from './project_comps/CreateCustomer'
+import ProductTable from './project_comps/ProductTable'
+import Product from './project_comps/pages/Product'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -59,7 +63,16 @@ class App extends Component {
                   <Member />
                 </Route>
                 <Route path="/CreateMember">
-                <CreateMember/>
+                  <CreateMember />
+                </Route>
+                <Route path="/Customer">
+                  <Customer />
+                </Route>
+                <Route path="/CreateCustomer">
+                  <CreateCustomer />
+                </Route>
+                <Route path="/Product">
+                  <Product />
                 </Route>
               </Switch>
             </div>

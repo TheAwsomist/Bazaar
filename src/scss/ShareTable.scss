@@ -6,6 +6,10 @@
   margin-right: 12px;
 }
 
+.shareoptions{
+  margin-left: 10px;
+}
+
 .sharenamekeeper {
   display: flex;
   padding-bottom: 30px;
@@ -35,9 +39,19 @@ tr {
   border-bottom: 0.5px solid rgb(197, 197, 197);
 }
 
+@media screen and (max-width:1662px) {
+  .Pagination{
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width:1663px) {
+  width: 78vw;
+}
+
 .Pagination {
   justify-content: end;
-  width: 78vw;
+  // width: 78vw;
   a {
     color: rgb(87, 87, 87);
   }
@@ -67,4 +81,17 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 19px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width:"1662px") {
+  .numselected{
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width:"1663px") {
+  .numselected{
+    width: 87vw;
+  }
 }

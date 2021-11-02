@@ -1,4 +1,5 @@
 import '../scss/SideNavbar.css'
+import '../scss/DemoPage.css'
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import share from '../assets/images/icons/share.png'
@@ -44,8 +45,12 @@ const SideNavbar = () => {
         <Link to="/Members">
           <NavItems icon={person} title="Members" id="member"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
         </Link>
-        <NavItems icon={people} title="Customers" id="customer"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
-        <NavItems icon={deals} title="Products" id="product"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        <Link to="/Customer">
+          <NavItems icon={people} title="Customers" id="customer"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        </Link>
+        <Link to="/Product">
+          <NavItems icon={deals} title="Products" id="product"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+        </Link>
         <NavItems icon={medal} title="Offers" id="offer" isActive={"dashboard" === navclass}   SetClass={SetNavClass} />
         <NavItems icon={setting} title="Settings" id="setting" isActive={"dashboard" === navclass}   SetClass={SetNavClass} />
       </div>

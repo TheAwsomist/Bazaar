@@ -6,6 +6,10 @@
   margin-right: 12px;
 }
 
+.shareoptions {
+  margin-left: 10px;
+}
+
 .sharenamekeeper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,11 +50,20 @@ tr {
   border-bottom: 0.5px solid #c5c5c5;
 }
 
+@media screen and (max-width: 1662px) {
+  .Pagination {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1663px) {
+  width: 78vw;
+}
+
 .Pagination {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  width: 78vw;
 }
 
 .Pagination a {
@@ -86,5 +99,18 @@ li a {
   font-style: normal;
   font-weight: 500;
   line-height: 19px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1662px) {
+  .numselected {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1663px) {
+  .numselected {
+    width: 87vw;
+  }
 }
 /*# sourceMappingURL=ShareTable.css.map */

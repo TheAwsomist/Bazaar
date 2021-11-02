@@ -28,9 +28,16 @@
   font-size: 16px;
   line-height: 20px;
   color: #2F80ED;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .form {
-  width: 50vw;
+  width: 68vw;
+}
+
+.form-label {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=CreateMember.css.map */

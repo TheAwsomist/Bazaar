@@ -22,22 +22,16 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import '../scss/CreateDemo.css'
 import '../scss/CreateMember.css'
 
-const CreateMember = () => {
+const CreateCustomer = () => {
   return (
     <div className="form">
       <div>
-        <h2>Add Members</h2>
+        <h2>Add Customer</h2>
       </div>
       <div>
         <form action="">
           <CForm>
-            <div className="row" style={{ paddingLeft: '52px' }}>
-              <div className="addimage">
-                <p>+</p>
-              </div>
-              <div className="uploadphoto">Upload Photo</div>
-            </div>
-            <div className="row">
+          <div className="row">
               <div className="inputfield">
                 <CFormLabel htmlFor="TallyName">Mobile Number</CFormLabel>
                 <CFormInput
@@ -48,13 +42,36 @@ const CreateMember = () => {
                 />
               </div>
               <div className="inputfield">
-                <CFormLabel htmlFor="Brand">Alternative Mobile Number</CFormLabel>
+                <CFormLabel htmlFor="Brand">Date</CFormLabel>
                 <CFormInput
-                  type="number"
-                  id="AltMobNum"
+                  type="date"
+                  id="date"
                   aria-describedby="emailHelp"
                   className="input"
                 />
+              </div>
+            </div>
+            <div className="row" style={{ paddingLeft: '52px',alignItems:"center"}}>
+              <div style={{width:"fit-content"}}>
+                  <div className="addimage">
+                    <p>+</p>
+                  </div>
+                  <div className="uploadphoto">Upload Photo</div>
+              </div>
+              <div className="inputfield">
+                <CFormLabel htmlFor="Company">Assign Category</CFormLabel>
+                <CFormSelect
+                  aria-label="Default select example"
+                  type="text"
+                  id="State"
+                  aria-describedby="emailHelp"
+                  className="input"
+                >
+                  <option>Select Category</option>
+                  <option value="1">Bronze</option>
+                  <option value="2">Silver</option>
+                  <option value="3">Gold</option>
+                </CFormSelect>
               </div>
             </div>
             <div className="row">
@@ -146,19 +163,21 @@ const CreateMember = () => {
             </div>
             <div className="row">
             <div className="inputfield">
-                <CFormLabel htmlFor="Company">Role</CFormLabel>
-                <CFormSelect
-                  aria-label="Default select example"
-                  type="text"
-                  id="City"
+                <CFormLabel htmlFor="SubHSNCode">GST</CFormLabel>
+                <CFormInput
+                  type="number"
+                  id="GST"
                   aria-describedby="emailHelp"
                   className="input"
-                >
-                  <option>Select Role</option>
-                  <option value="1">Role 1</option>
-                  <option value="2">Role 2</option>
-                  <option value="3">Role 3</option>
-                </CFormSelect>
+                />
+              </div><div className="inputfield">
+                <CFormLabel htmlFor="SubHSNCode">Referral ID</CFormLabel>
+                <CFormInput
+                  type="number"
+                  id="RefID"
+                  aria-describedby="emailHelp"
+                  className="input"
+                />
               </div>
             </div>
             <div className="row" style={{padding:"0px 40px"}}>
@@ -187,4 +206,4 @@ const CreateMember = () => {
   )
 }
 
-export default CreateMember
+export default CreateCustomer
