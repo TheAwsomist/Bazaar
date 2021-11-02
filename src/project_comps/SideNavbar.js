@@ -10,6 +10,12 @@ import person from '../assets/images/icons/person.png'
 import deals from '../assets/images/icons/deals.png'
 import medal from '../assets/images/icons/medal.png'
 import setting from '../assets/images/icons/setting.png'
+import share_active from '../assets/images/icons/share-active.png'
+import menu_active from '../assets/images/icons/menu-active.png'
+import people_active from '../assets/images/icons/people-active.png'
+import demo_active from '../assets/images/icons/demo-active.png'
+import person_active from '../assets/images/icons/person-active.png'
+import deals_active from '../assets/images/icons/deals-active.png'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
@@ -37,22 +43,22 @@ const SideNavbar = () => {
           />
         </Link>
         <Link to="/demopage">
-          <NavItems icon={demo} title="Demo" id="demo"  isActive={"dashboard" === navclass} SetClass={SetNavClass} />
+          <NavItems icon={demo} title="Demo" id="demo"  isActive={"dashboard" === navclass} SetClass={(id)=>SetNavClass(id)} />
         </Link>
         <Link to="/ShareApp">
-          <NavItems icon={share} title="Share Link Of App" id="share"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+          <NavItems icon={share} title="Share Link Of App" id="share"  isActive={"dashboard" === navclass}  SetClass={(id)=>SetNavClass(id)} />
         </Link>
         <Link to="/Members">
-          <NavItems icon={person} title="Members" id="member"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+          <NavItems icon={person} title="Members" id="member"  isActive={"dashboard" === navclass}  SetClass={(id)=>SetNavClass(id)} />
         </Link>
         <Link to="/Customer">
-          <NavItems icon={people} title="Customers" id="customer"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+          <NavItems icon={people} title="Customers" id="customer"  isActive={"dashboard" === navclass}  SetClass={(id)=>SetNavClass(id)} />
         </Link>
         <Link to="/Product">
-          <NavItems icon={deals} title="Products" id="product"  isActive={"dashboard" === navclass}  SetClass={SetNavClass} />
+          <NavItems icon={deals} title="Products" id="product"  isActive={"dashboard" === navclass}  SetClass={(id)=>SetNavClass(id)} />
         </Link>
-        <NavItems icon={medal} title="Offers" id="offer" isActive={"dashboard" === navclass}   SetClass={SetNavClass} />
-        <NavItems icon={setting} title="Settings" id="setting" isActive={"dashboard" === navclass}   SetClass={SetNavClass} />
+        <NavItems icon={medal} title="Offers" id="offer" isActive={"dashboard" === navclass}   SetClass={(id)=>SetNavClass(id)} />
+        <NavItems icon={setting} title="Settings" id="setting" isActive={"dashboard" === navclass}   SetClass={(id)=>SetNavClass(id)} />
       </div>
     </div>
   )
@@ -61,11 +67,11 @@ const SideNavbar = () => {
 const NavItems = ({ icon, title, id, isActive, SetClass}) => {
     console.log(SetClass);
   return (
-    <div className="navitem">
+    <div className="navitem" id={id}>
       <img src={icon} alt="" width="15px" height="15px" />
       <h3
         className={isActive ? 'navtitle-active' : 'navtitle'}
-        onClick={() => {SetClass(id);}}
+        onClick={(e) => {SetClass(e.target.id);}}
       >
         {title}
       </h3>

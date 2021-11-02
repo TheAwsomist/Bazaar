@@ -31,11 +31,11 @@ const CreateMember = () => {
       <div>
         <form action="">
           <CForm>
-            <div className="row" style={{ paddingLeft: '52px' }}>
+            <div className="row" style={{ paddingLeft: '52px',flexDirection:"column" }}>
               <div className="addimage">
                 <p>+</p>
               </div>
-              <div className="uploadphoto">Upload Photo</div>
+              <div className="uploadphoto" style={{marginTop:"15px"}}>Upload Photo</div>
             </div>
             <div className="row">
               <div className="inputfield">

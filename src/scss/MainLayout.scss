@@ -70,10 +70,16 @@
   .demotable{
     width: 75vw;
   }
+  .demofilter{
+    width: 80vw;
+  }
 }
 @media screen and(min-width:1662px) {
   .demotable{
-    width: 87vw;
+    width: 80vw;
+  }
+  .demofilter{
+    width: 80vw;
   }
 }
 .demotable {

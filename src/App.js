@@ -19,6 +19,7 @@ import Customer from './project_comps/pages/Customer'
 import CreateCustomer from './project_comps/CreateCustomer'
 import ProductTable from './project_comps/ProductTable'
 import Product from './project_comps/pages/Product'
+import CreateProduct from './project_comps/CreateProduct'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -73,6 +74,9 @@ class App extends Component {
                 </Route>
                 <Route path="/Product">
                   <Product />
+                </Route>
+                <Route path="/CreateProduct">
+                  <CreateProduct />
                 </Route>
               </Switch>
             </div>

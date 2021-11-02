@@ -24,8 +24,8 @@ const Product = () => {
             </select>
           </p>
           <div>
-              <Link to="/createnewdemo"><button className="createdemo" style={{marginRight:"40px"}}>Update Product</button></Link>
-              <Link to="/createnewdemo"><button className="createdemo">Add Product</button></Link>
+              <Link to="/CreateProduct"><button className="createdemo" style={{marginRight:"40px"}}>Update Product</button></Link>
+              <Link to="/CreateProduct"><button className="createdemo">Add Product</button></Link>
           </div>
         </div>
         <div>

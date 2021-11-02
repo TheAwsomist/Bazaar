@@ -57,7 +57,9 @@ tr {
 }
 
 @media screen and (min-width: 1663px) {
-  width: 78vw;
+  .Pagination {
+    width: 80vw;
+  }
 }
 
 .Pagination {
