@@ -50,7 +50,13 @@ tr {
   border-bottom: 0.5px solid #c5c5c5;
 }
 
-@media screen and (max-width: 1662px) {
+@media screen and (max-width: 1280px) {
+  .Pagination {
+    width: 72vw;
+  }
+}
+
+@media screen and (max-width: 1662px) and (min-width: 1290px) {
   .Pagination {
     width: 75vw;
   }

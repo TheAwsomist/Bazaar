@@ -51,7 +51,7 @@ const Demo = ({ name, link }) => {
         </div>
       )}
       <div className="demotable">
-        <CTable>
+        <CTable style={{height:"100%"}}>
           <CTableHead>
             <CTableRow>
               <CTableHeaderCell

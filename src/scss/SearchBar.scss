@@ -1,5 +1,29 @@
+
+
+@media screen and (max-width:1300px) {
+    .searchbar, .search{
+        width: 81vw;
+    }
+}
+@media screen and (max-width:1450px) and (min-width:1301px) {
+    .searchbar, .search{
+        width: 83vw;
+    }
+}
+@media screen and (max-width:1710px) and (min-width:1451px) {
+    .searchbar, .search{
+        width: 85vw;
+    }
+}
+
+@media screen and (min-width:1711px) {
+    .searchbar, .search{
+        width: 87vw;
+    }
+}
+
 .searchbar{
-    width: 87vw;
+    // width: 87vw;
         border-bottom: 1px solid #EBEFF2;
         background-color: white;
         position: absolute;
@@ -10,7 +34,7 @@
         padding:21px 38.5px;
         padding-right: 39px;
     .search{
-        width: 87vw;
+        // width: 87vw;
         // border-bottom: 1px solid #EBEFF2;
         // position: absolute;
         // top: 3px;

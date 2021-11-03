@@ -68,6 +68,7 @@ body{
     background-color: #F5F6F8;
     margin-left: 36px;
     margin-top: 102px;
+    overflow:scroll;
 }
 
 @media screen and (max-width:1662px){
@@ -78,11 +79,14 @@ body{
         background-color: #F5F6F8;
         margin-left: 36px;
         margin-top: 102px;
+        overflow:scroll;
     }
 }
 
 .mainpage{
     display: flex;
+    height: 100vh;
+    overflow: scroll;
 }
 a{
     text-decoration: none;

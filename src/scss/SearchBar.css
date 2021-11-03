@@ -1,5 +1,28 @@
+@media screen and (max-width: 1300px) {
+  .searchbar, .search {
+    width: 81vw;
+  }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1301px) {
+  .searchbar, .search {
+    width: 83vw;
+  }
+}
+
+@media screen and (max-width: 1710px) and (min-width: 1451px) {
+  .searchbar, .search {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 1711px) {
+  .searchbar, .search {
+    width: 87vw;
+  }
+}
+
 .searchbar {
-  width: 87vw;
   border-bottom: 1px solid #EBEFF2;
   background-color: white;
   position: absolute;
@@ -16,7 +39,6 @@
 }
 
 .searchbar .search {
-  width: 87vw;
   right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;

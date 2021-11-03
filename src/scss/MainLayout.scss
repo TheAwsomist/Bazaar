@@ -66,12 +66,20 @@
   }
 }
 
-@media screen and (max-width:1662px) {
+@media screen and (max-width:1280px) {
+  .demotable{
+    width: 72vw;
+  }
+  .demofilter{
+    width: 72vw;
+  }
+}
+@media screen and (max-width:1662px) and (min-width:1290px) {
   .demotable{
     width: 75vw;
   }
   .demofilter{
-    width: 80vw;
+    width: 75vw;
   }
 }
 @media screen and(min-width:1662px) {
