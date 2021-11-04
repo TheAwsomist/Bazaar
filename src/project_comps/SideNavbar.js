@@ -20,9 +20,9 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const SideNavbar = () => {
-  const [navclass, SetNavClass] = useState('etc')
+  const [navclass, SetNavClass] = useState('dashboard')
 
-  useEffect(() => {}, [navclass]);
+  useEffect(() => {}, [navclass])
 
   return (
     <div className="Side">
@@ -37,40 +37,93 @@ const SideNavbar = () => {
       </div>
       <div className="nav-options">
         <Link to="/">
-          <NavItems icon={menu} icon_active={menu_active} title="DashBoard" id="dashboard" isActive={'dashboard' === navclass} SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={menu}
+            icon_active={menu_active}
+            title="DashBoard"
+            id="dashboard"
+            isActive={'dashboard' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
         <Link to="/demopage">
-          <NavItems icon={demo} icon_active={demo_active} title="Demo" id="demo" isActive={"demo" === navclass} SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={demo}
+            icon_active={demo_active}
+            title="Demo"
+            id="demo"
+            isActive={'demo' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
         <Link to="/ShareApp">
-          <NavItems icon={share} icon_active={share_active} title="Share Link Of App" id="share"  isActive={"share" === navclass}  SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={share}
+            icon_active={share_active}
+            title="Share Link Of App"
+            id="share"
+            isActive={'share' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
         <Link to="/Members">
-          <NavItems icon={person} icon_active={person_active} title="Members" id="member"  isActive={"member" === navclass}  SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={person}
+            icon_active={person_active}
+            title="Members"
+            id="member"
+            isActive={'member' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
         <Link to="/Customer">
-          <NavItems icon={people} icon_active={people_active} title="Customers" id="customer"  isActive={"customer" === navclass}  SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={people}
+            icon_active={people_active}
+            title="Customers"
+            id="customer"
+            isActive={'customer' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
         <Link to="/Product">
-          <NavItems icon={deals} icon_active={deals_active} title="Products" id="product"  isActive={"product" === navclass}  SetClass={(id)=>SetNavClass(id)} />
+          <NavItems
+            icon={deals}
+            icon_active={deals_active}
+            title="Products"
+            id="product"
+            isActive={'product' === navclass}
+            SetClass={(id) => SetNavClass(id)}
+          />
         </Link>
-        <NavItems icon={medal} icon_active={medal} title="Offers" id="offer" isActive={"offer" === navclass}   SetClass={(id)=>SetNavClass(id)} />
-        <NavItems icon={setting} icon_active={setting} title="Settings" id="setting" isActive={"setting" === navclass}   SetClass={(id)=>SetNavClass(id)} />
+        <NavItems
+          icon={medal}
+          icon_active={medal}
+          title="Offers"
+          id="offer"
+          isActive={'offer' === navclass}
+          SetClass={(id) => SetNavClass(id)}
+        />
+        <NavItems
+          icon={setting}
+          icon_active={setting}
+          title="Settings"
+          id="setting"
+          isActive={'setting' === navclass}
+          SetClass={(id) => SetNavClass(id)}
+        />
       </div>
     </div>
   )
 }
 
-const NavItems = ({ icon, icon_active, title, id, isActive, SetClass}) => {
-  console.log(typeof(SetClass));
-  console.log(SetClass);
+const NavItems = ({ icon, icon_active, title, id, isActive, SetClass }) => {
+  console.log(typeof SetClass)
+  console.log(SetClass)
   return (
-    <div className="navitem" id={id}>
-      <img src={isActive ? icon_active : icon } alt="" width="15px" height="15px" />
-      <h3
-        className={isActive ? 'navtitle-active' : 'navtitle'}
-        onClick={(e) => SetClass(id)}
-      >
+    <div className="navitem" id={id} onClick={(e) => SetClass(id)}>
+      <img src={isActive ? icon_active : icon} alt="" width="15px" height="15px" />
+      <h3 className={isActive ? 'navtitle-active' : 'navtitle'}>
         {title}
       </h3>
     </div>

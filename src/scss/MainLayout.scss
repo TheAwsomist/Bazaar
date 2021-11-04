@@ -60,9 +60,12 @@
     }
   }
   #dashboardlowersection {
-    width: 1069px;
+    width: 72vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 23px;
   }
 }
 

@@ -86,7 +86,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .navitem .navtitle {
@@ -100,6 +105,7 @@
   /* dark_blue */
   color: #334d6e;
   margin-left: 16.5px;
+  margin-bottom: 0px;
 }
 
 .navitem .navtitle-active {
@@ -113,6 +119,7 @@
   /* dark_blue */
   color: #d65810;
   margin-left: 16.5px;
+  margin-bottom: 0px;
 }
 
 .nav-options {

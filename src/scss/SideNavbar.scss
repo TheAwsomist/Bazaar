@@ -78,7 +78,9 @@
 
 .navitem {
     display: flex;
-    margin-bottom: 20px;
+    height: 52px;
+    align-items: center;
+    transition: all 0.1s ease-in;
   .navtitle {
     font-family: Poppins;
     font-style: normal;
@@ -93,6 +95,7 @@
 
     color: #334d6e;
     margin-left: 16.5px;
+    margin-bottom: 0px;
   }
   .navtitle-active{
     font-family: Poppins;
@@ -107,11 +110,10 @@
     /* dark_blue */
       color: #d65810;
       margin-left: 16.5px;
+      margin-bottom: 0px;
+
   }
 }
-
-
-
 
 .nav-options{
     margin-top: 39px;

@@ -74,7 +74,7 @@ body{
 @media screen and (max-width:1662px){
     .Layout-Container{
         width: 78vw;
-        height: 92.5vh;
+        height: 80.5vh;
         margin-top: 71px;
         background-color: #F5F6F8;
         margin-left: 36px;
@@ -86,7 +86,7 @@ body{
 .mainpage{
     display: flex;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
